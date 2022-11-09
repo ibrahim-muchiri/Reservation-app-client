@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 
 const Featured = () => {
 
-  const { data, loading, error } = useFetch("/hotel/countByCity?cities=Tanzania, Kenya, Carfonia");
+  const { data, loading, error } = useFetch("/hotel/countByCity?cities=Nairobi, Mombasa, Kisumu");
 
   
   return (
@@ -18,7 +18,7 @@ const Featured = () => {
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Tanzania</h1>
+          <h1>Nairobi</h1>
           <h2>{data[0]} properties</h2>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Featured = () => {
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Kenya</h1>
+          <h1>Mombasa</h1>
           <h2>{data[1]} properties</h2>
         </div>
       </div>
@@ -41,7 +41,7 @@ const Featured = () => {
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Carfonia</h1>
+          <h1>Kisumu</h1>
           <h2>{data[2]} properties</h2>
         </div>
       </div> </> ) }
