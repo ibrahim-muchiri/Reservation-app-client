@@ -1,0 +1,9 @@
+.login {
+    /* display: flex;
+    margin: 15px; */
+}
+.lContainer {
+    display: flex;
+    margin: 150px;
+    justify-content: center;
+}
